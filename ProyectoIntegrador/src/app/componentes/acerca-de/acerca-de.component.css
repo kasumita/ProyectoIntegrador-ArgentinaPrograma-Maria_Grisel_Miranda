@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+
 .img-fluid{
     position:relative;
     border-radius: 50%;
     border: 8px solid rgb(156, 63, 121);   
 top:-9vh;
 width: 9vw;
+
 }
 #nombre{
     position:relative;
     font-weight: bold;
-    font-size:22px;
+    font-size: clamp(0.5rem, 0.5vw + 1rem , 1.2rem);
     color: #fff;
     margin-top: -65px;
     font-family: Roboto;
@@ -19,28 +22,27 @@ h1{
     margin-top:15px;
     color:rgb(156, 63, 121);
     font-family: Roboto;
-    font-size: 30px;
+    font-size: clamp(1.5rem, 1vw + 1rem , 3rem);
 }
 #titulo{
     font-weight:bold;
+    color: rgba(255, 255, 255, 0.582);
 }
 .nombre{
-    background-color: rgba(156, 63, 120, 0.425);
-    padding-left:3vw;
-    height:24vh;
+    background-color: rgb(156, 63, 121);
+    padding-left:2vw;
 }
 .container{
     background-color: rgba(156, 63, 120, 0.425);
-    height: 200px;
+/*    height: 200px;*/
     border-right: 5px dashed rgb(156, 63, 121) ;
     border-bottom: 5px dashed rgb(156, 63, 121) ;
 }
-.acerca{
 
-    height:24vh;
-}
+
 @media (min-width: 1200px) {
     .container{
         max-width: 2080px;
     }
 }
+@media (max-width: 1200px)
