@@ -26,16 +26,18 @@ h1{
 }
 .nombre{
     background-color: rgba(156, 63, 120, 0.425);
-    padding-left:60px;
-    border-bottom: 5px dashed rgb(156, 63, 121) ;
+    padding-left:3vw;
+    height:24vh;
 }
 .container{
     background-color: rgba(156, 63, 120, 0.425);
     height: 200px;
-}
-.acerca{
     border-right: 5px dashed rgb(156, 63, 121) ;
     border-bottom: 5px dashed rgb(156, 63, 121) ;
+}
+.acerca{
+
+    height:24vh;
 }
 @media (min-width: 1200px) {
     .container{
