@@ -1,18 +1,38 @@
 
 .img-fluid{
-    position: absolute;
+    position:relative;
     border-radius: 50%;
-    border: 5px solid rgb(156, 63, 121);
-    width:12%;
-    top: 50%;
+    border: 8px solid rgb(156, 63, 121);   
+top:-8vh;
+width: 10vw;
 }
 #nombre{
+    position:relative;
     font-weight: bold;
     font-size:22px;
-    margin-top: 10px;
+    color: #fff;
+    margin-top:0px;
+}
+/*.nombre::before{   
+    position:absolute;
+    width:80%;
+    background-image: url(../../../assets/perfil.png);   
+    border-radius: 50%;
+    border: 8px solid rgb(156, 63, 121);
+    
+}*/
+.nombre{
+    background-color: rgba(156, 63, 120, 0.425);
+    padding-left:60px;
+    border-bottom: 5px dashed rgb(156, 63, 121) ;
 }
 .container{
     background-color: rgba(156, 63, 120, 0.425);
+    height: 200px;
+}
+.acerca{
+    border-right: 5px dashed rgb(156, 63, 121) ;
+    border-bottom: 5px dashed rgb(156, 63, 121) ;
 }
 @media (min-width: 1200px) {
     .container{
