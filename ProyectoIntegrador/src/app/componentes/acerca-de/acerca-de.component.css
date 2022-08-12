@@ -1,0 +1,21 @@
+
+.img-fluid{
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid rgb(156, 63, 121);
+    width:12%;
+    top: 50%;
+}
+#nombre{
+    font-weight: bold;
+    font-size:22px;
+    margin-top: 10px;
+}
+.container{
+    background-color: rgba(156, 63, 120, 0.425);
+}
+@media (min-width: 1200px) {
+    .container{
+        max-width: 2080px;
+    }
+}
