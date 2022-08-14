@@ -28,7 +28,7 @@ h1 {
 }
 .nombre {
   background-color: rgb(156, 63, 121);
-  padding-left: 1vw;
+ /* padding-left: 1vw;*/
 }
 .container {
   background-color: rgba(156, 63, 120, 0.425);
