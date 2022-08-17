@@ -1,24 +1,11 @@
-.container{
-    margin-top:5vh;
+.container {
+  margin-top: 5vh;
 }
-.row{
-    padding: 20px;
+
+.row {
+  box-sizing: border-box;
 }
-h1, h3{
-    display: inline;
+h1{
+  display: inline;
 }
-@media (max-width: 2080px) {
-    .container {
-      max-width: 1800px;
-    }
-  }
-  @media (max-width: 1800px) {
-    .container {
-      max-width: 1600px;
-    }
-  }
-  @media (max-width: 1600px) {
-      .container {
-        max-width: 1400px;
-      }
-    }
+

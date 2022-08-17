@@ -3,23 +3,31 @@
   }
   .row {
     box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
   }
   h1,
-  h3 {
+  h2 {
     display: inline;
+    padding-bottom: 1em;
   }
-  @media (max-width: 2080px) {
-    .container {
-      max-width: 1800px;
-    }
+
+  .python{
+    width:300px;
+    height:250px;
+    image-resolution: cover;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 10%;
+    
   }
-  @media (max-width: 1800px) {
-    .container {
-      max-width: 1600px;
-    }
+  .imagenes{
+    width:420px;
+ 
+    
   }
-  @media (max-width: 1600px) {
-    .container {
-      max-width: 1400px;
-    }
-  }
+.proyect{
+  display: inline-block;
+}
