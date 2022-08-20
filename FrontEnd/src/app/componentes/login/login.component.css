@@ -1,0 +1,13 @@
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #9C3F78;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(156, 63, 121, 1) rgba(156, 63, 120, 0.425));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(156, 63, 121, 1), rgba(156, 63, 120, 0.425))
+    }
+    .card{
+        background-color:rgba(156, 63, 121, 1);
+    }
