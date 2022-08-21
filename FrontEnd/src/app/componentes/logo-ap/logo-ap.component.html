@@ -14,7 +14,8 @@
                     src="../../../assets/twitter.png"></a>
             <a href="https://www.instagram.com/kasumita/" target="_blank" title="Instagram"><img
                     src="../../../assets/instagram.png"></a>
-            <button type="button" class="btn btn-outline-light" (click)="login()">Login</button>
+            <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">Login</button>
+            <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">Logout</button>
         </div>
     </div>
 </div>
