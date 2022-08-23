@@ -31,7 +31,7 @@ import { interceptorProvider } from './service/interceptor-service';
     ProyectoComponent,
     FooterComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
