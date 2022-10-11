@@ -1,28 +1,30 @@
-<div class="container">
-    <div class="row">
-        <h1>Educación</h1>
-        <div class="col-lg-1"></div>
-        <div class="col-lg-11">
-            <ul>
-                <li>
-                    <h1>Estudio 1</h1><br>
-                    <h3>(years)</h3>
-                </li>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident facilis quae quam eum, veniam
-                    architecto ullam tempora dolore quidem possimus!</p>
-                <li>
-                    <h1>Estudio 2</h1><br>
-                    <h3>(years)</h3>
-                </li>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident facilis quae quam eum, veniam
-                    architecto ullam tempora dolore quidem possimus!</p>
-                <li>
-                    <h1>Estudio 3</h1><br>
-                    <h3>(years)</h3>
-                </li>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident facilis quae quam eum, veniam
-                    architecto ullam tempora dolore quidem possimus!</p>
-            </ul>
-        </div>
+<div class="row gx-0">
+    <h1>Educación</h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">Agregar educación</button>
     </div>
+
+    <div class="col-lg-1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of educacion">
+                    <td>
+                        <h4>{{Educacion.nombreE}}</h4>
+                    </td>
+                    <td>{{Educacion.descripcionE}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-dark" routerLink="/editedu/{{Educacion.id}}">
+                            <i class="bi bi-pencil"></i>Editar</button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-dark" (click)="delete(Educacion.id)">
+                            <i class="bi bi-trash-fill"></i> Borrar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
 </div>
