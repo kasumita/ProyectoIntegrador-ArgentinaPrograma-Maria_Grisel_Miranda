@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.portfolio.mgm.Security.Service;
+package com.portfolio.mgm.Service;
 
 import com.portfolio.mgm.Entity.Experiencia;
 import com.portfolio.mgm.Repository.RExperiencia;
@@ -32,7 +32,7 @@ public class SExperiencia {
         rExperiencia.save(expe);
     }
     public void delete(int id){
-        rExperiencia.existsById(id);
+        rExperiencia.deleteById(id);
     }
     public boolean existsById(int id){
         return rExperiencia.existsById(id);
