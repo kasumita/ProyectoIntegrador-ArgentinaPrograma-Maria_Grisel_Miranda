@@ -1,5 +1,9 @@
 .container {
   margin-top: 5vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+color: rgb(156, 63, 121); 
 }
 
 .row {
@@ -8,4 +12,10 @@
 h1{
   display: inline;
 }
-
+table{
+  background-color: rgb(156, 63, 121); 
+  margin: 15px;
+  padding:15px;
+  color:azure;
+  border-radius: 10px;
+}
